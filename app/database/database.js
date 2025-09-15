@@ -11,7 +11,7 @@ const sequalize = new Sequalize(
     config.db.pass,
     {
         host: config.db.host,
-        dialect: 'mariadb',
+        dialect: config.db.dialect,
         dialectOptions: {}
     }
 )
